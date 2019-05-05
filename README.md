@@ -90,3 +90,6 @@ If Emacs loads a plugin by default, instead of dynamically loading it at runtime
  '(("M-;" . comment-dwim-with-haskell-style))
  Haskell-mode-map)
 ```
+
+###example
+[There are a lot of examples of lazy-load usage] (https://github.com/manateelazycat/lazycat-emacs/blob/master/site-lisp/config/init-key.el)
