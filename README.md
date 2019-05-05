@@ -52,7 +52,7 @@ The following code means that the first time you press Alt + g, Emacs goes to th
  "goto-line-preview")
 ```
 
-The following code means that the first time you press Ctrl + ct in ruby ​​mode, Emacs goes to the load-path directory and finds the ruby-extension.el file, loads the plugin and executes ruby-hash-syntax-toggle. function.
+The following code means that the first time you press Ctrl + c t in ruby ​​mode, Emacs goes to the load-path directory and finds the ruby-extension.el file, loads the plugin and executes ruby-hash-syntax-toggle. function.
 
 ```elisp
 (lazy-load-local-keys
