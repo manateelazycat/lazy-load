@@ -79,13 +79,13 @@
 
 ;;; Code:
 
-(defun lazy-load-global-keys (key-alist filename)
-  (lazy-load-set-keys key-alist)
+(defun lazy-load-global-keys (key-alist filename &optional key-prefix)
+  (lazy-load-set-keys key-alist nil key-prefix)
   (dolist (element key-alist)
     (setq fun (cdr element))
     (autoload fun filename)))
 
-(defun lazy-load-local-keys (key-alist keymap key-prefix filename)
+(defun lazy-load-local-keys (key-alist keymap filename &optional key-prefix)
   (lazy-load-set-keys key-alist keymap key-prefix)
   (dolist (element key-alist)
     (setq fun (cdr element))
