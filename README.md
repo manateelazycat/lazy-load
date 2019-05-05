@@ -93,5 +93,5 @@ If Emacs loads a plugin by default, instead of dynamically loading it at runtime
  Haskell-mode-map)
 ```
 
-###example
+### Example
 [There are a lot of examples of lazy-load usage] (https://github.com/manateelazycat/lazycat-emacs/blob/master/site-lisp/config/init-key.el)
