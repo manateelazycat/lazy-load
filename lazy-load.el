@@ -83,13 +83,13 @@
   (lazy-load-set-keys key-alist nil key-prefix)
   (dolist (element key-alist)
     (setq fun (cdr element))
-    (autoload fun filename)))
+    (autoload fun filename nil t)))
 
 (defun lazy-load-local-keys (key-alist keymap filename &optional key-prefix)
   (lazy-load-set-keys key-alist keymap key-prefix)
   (dolist (element key-alist)
     (setq fun (cdr element))
-    (autoload fun filename)))
+    (autoload fun filename nil t)))
 
 (defun lazy-load-set-keys (key-alist &optional keymap key-prefix)
   "This function is to little type when define key binding.
